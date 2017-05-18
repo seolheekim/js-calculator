@@ -7,7 +7,7 @@
  */
 
 function calculatorModule() {
-  var memory;
+  var memory = 0;
   var total = 0;
   var calculator = {};
 
@@ -71,12 +71,20 @@ function multiply(num){
    * @param  { Number } x
    */
 
+function divide(num){
+  if(typeof num === "number"){
+    return total /= num;
+  }
+}
 
   /**
    * Return the value stored at `memory`
    * @return { Number }
    */
 
+   function recallMemory(){
+    return memory;
+   }
 
   /**
    * Stores the value of `total` to `memory`
@@ -95,6 +103,8 @@ function multiply(num){
           add: add,
           subtract: subtract,
           multiply: multiply,
+          divide: divide,
+          recallMemory: recallMemory,
 
           }
 }
