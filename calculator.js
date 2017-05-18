@@ -9,16 +9,21 @@
 function calculatorModule() {
   var memory;
   var total = 0;
-  return calculator = {
+  var calculator = {};
 
-  };
-}
 
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
    * @return { Number }    current total
    */
+
+function load (num) {
+  if(typeof num === "number"){
+    total = num;
+    return total;
+  }
+}
 
   /**
    * Return the value of `total`
@@ -69,4 +74,5 @@ function calculatorModule() {
   /**
    * Validation
    */
-
+   return {load: load}
+}
