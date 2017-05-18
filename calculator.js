@@ -90,10 +90,17 @@ function divide(num){
    * Stores the value of `total` to `memory`
    */
 
+function saveMemory(){
+  memory = total;
+  console.log(memory);
+}
 
   /**
    * Clear the value stored at `memory`
    */
+function clearMemory(){
+  memory = 0;
+}
 
   /**
    * Validation
@@ -105,6 +112,8 @@ function divide(num){
           multiply: multiply,
           divide: divide,
           recallMemory: recallMemory,
+          saveMemory: saveMemory,
+          clearMemory: clearMemory
+          };
 
-          }
 }
