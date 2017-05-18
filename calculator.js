@@ -30,6 +30,9 @@ function load (num) {
    * @return { Number }
    */
 
+function getTotal(){
+  return total;
+}
 
 
   /**
@@ -37,6 +40,11 @@ function load (num) {
    * @param { Number } x
    */
 
+function add(num){
+  if(typeof num === "number"){
+    return total += num;
+  }
+}
 
   /**
    * Subtracts the value passed in from `total`
@@ -74,5 +82,10 @@ function load (num) {
   /**
    * Validation
    */
-   return {load: load}
+   return {load: load,
+          getTotal: getTotal,
+          add: add,
+
+
+          }
 }
