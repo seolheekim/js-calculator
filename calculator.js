@@ -92,7 +92,6 @@ function divide(num){
 
 function saveMemory(){
   memory = total;
-  console.log(memory);
 }
 
   /**
