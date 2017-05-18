@@ -51,7 +51,11 @@ function add(num){
    * @param  { Number } x
    */
 
-
+function subtract(num){
+  if(typeof num === "number"){
+    return total -= num;
+  }
+}
   /**
    * Multiplies the value by `total`
    * @param  { Number } x
@@ -85,7 +89,7 @@ function add(num){
    return {load: load,
           getTotal: getTotal,
           add: add,
-
+          subtract: subtract,
 
           }
 }
