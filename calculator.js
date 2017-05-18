@@ -60,7 +60,11 @@ function subtract(num){
    * Multiplies the value by `total`
    * @param  { Number } x
    */
-
+function multiply(num){
+  if(typeof num === "number"){
+    return total *= num;
+  }
+}
 
   /**
    * Divides the value passing in by `total`
@@ -90,6 +94,7 @@ function subtract(num){
           getTotal: getTotal,
           add: add,
           subtract: subtract,
+          multiply: multiply,
 
           }
 }
